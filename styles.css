@@ -1,7 +1,8 @@
   div.museum {
     display: flex;
     flex-wrap: wrap;
-    height: auto
+    height: auto;
+    justify-content: center ;
   }
   div.gallery {
     flex: 1;
@@ -11,15 +12,6 @@
     max-width: 31%;
   }
 
-  @media (pointer:none), (pointer:coarse) {
-    div.gallery {
-        flex: 1;
-        margin: 5px;
-        border: 1px solid #ccc;
-        min-width: 90%;
-        max-width: 90%;
-      }
-  }
   div.gallery:hover {
     border: 1px solid #777;
   }
@@ -27,12 +19,47 @@
   div.gallery img {
     width: 100%;
     height: auto;
-    max-height: 250px;
   }
   
   div.desc {
     padding: 15px;
     text-align: center;
+  }
+  .tagline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .tag {
+    font-size: 1.0em;
+    height: auto;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 2%;
+  }
+  .tag.node {
+    background-color: #72A960;
+    color: rgb(235, 235, 235)
+  }
+  .tag.express {
+    background-color: #F7DF1E;
+  }
+  .tag.stripe {
+    background-color: #6058F7;
+    color: rgb(235, 235, 235)
+  }
+  .tag.react {
+    background-color: #5ED3F3;
+  }
+  .tag.firebase{
+    background-color: #ED7E0B;
+  }
+  .tag.fit{
+    background-color: #E8472F;
+    color: rgb(235, 235, 235)
+  }
+  .tag.android{
+    background-color: #42DE8A;
   }
   .center {
     text-align: center;
@@ -48,5 +75,22 @@
     background-color: #f2f2f2;
     font-size: 1.10em;
     line-height: 1.4;
+  }
+
+  @media (pointer:none), (pointer:coarse) {
+    div.gallery {
+        flex: 1;
+        margin: 5px;
+        border: 1px solid #ccc;
+        min-width: 100%;
+        max-width: 100%;
+      }
+      .tag {
+        font-size: 1.10em;
+        height: auto;
+        width: fit-content;
+        border-radius: 10px;
+        padding: 3%;
+      }
   }
  
