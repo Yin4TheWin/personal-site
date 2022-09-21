@@ -1,0 +1,49 @@
+  div.museum {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto
+  }
+  div.gallery {
+    flex: 1;
+    margin: 5px;
+    border: 1px solid #ccc;
+    min-width: 31%;
+    max-width: 31%;
+  }
+
+  @media (pointer:none), (pointer:coarse) {
+    div.gallery {
+        flex: 1;
+        margin: 5px;
+        border: 1px solid #ccc;
+        min-width: 90%;
+        max-width: 90%;
+      }
+  }
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .center {
+    text-align: center;
+  }
+  .padtext {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  body {
+    background-image: url("imgs/bg.png");
+    background-color: #f2f2f2;
+  };
