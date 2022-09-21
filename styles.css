@@ -1,3 +1,4 @@
+  /* Styles for the image gallery */
   div.museum {
     display: flex;
     flex-wrap: wrap;
@@ -25,6 +26,8 @@
     padding: 15px;
     text-align: center;
   }
+
+  /* Styles for tags under each project */
   .tagline{
     display: flex;
     flex-direction: row;
@@ -61,6 +64,8 @@
   .tag.android{
     background-color: #42DE8A;
   }
+
+  /* General styles to format whole sections */
   .center {
     text-align: center;
   }
@@ -77,6 +82,7 @@
     line-height: 1.4;
   }
 
+  /* Custom styling rules for mobile devices */
   @media (pointer:none), (pointer:coarse) {
     div.gallery {
         flex: 1;
