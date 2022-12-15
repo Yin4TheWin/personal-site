@@ -77,6 +77,7 @@
   }
   body {
     background-image: url("imgs/bg.png");
+    background-size: 40% auto;
     background-color: #f2f2f2;
     font-size: 1.10em;
     line-height: 1.4;
